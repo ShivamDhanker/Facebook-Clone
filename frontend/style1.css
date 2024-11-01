@@ -1,0 +1,264 @@
+:root{
+    --bg: #f2f4f7;
+    --blue: #1877f2;
+    --white: #fff;
+    --dark-blue: #1360c4;
+    --lightgrey: #d2d2d2;
+    --green: #42b72a;
+    --black: #606770;
+    --dark-green: #369423;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    background-color: var(--bg);
+    font-family: Arial, Helvetica, sans-serif;      
+}
+
+.main-wrapper {
+    width: 500px;
+    height: 800px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    text-align: center;
+}
+
+.logo {
+    color: var(--blue);
+    font-size: 44px;
+    letter-spacing: -2px;
+}
+
+.panel {
+    background-color: var(--white);
+    width: 500px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.heading1 {
+    padding: 8px 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.heading2 {
+    font-size: 15px;
+    font-weight: lighter;
+    color: var(--black);
+    margin-bottom: 12px;
+}
+
+hr {
+    margin: 16px 0;
+    opacity: 0.3;
+}
+
+
+.input_box_flex {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    margin: 10px;
+    font-size: 15px;
+    /* border-radius: 6px; */
+}
+
+.firstname, .lastname {
+    font-size: 15px;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border-color: var(--lightgrey);
+    border-width: thin;
+}
+
+h4 {
+    text-align: left;
+    padding: 0 24px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.dropdown {
+    display: flex;
+    width: 90%;
+    margin: 10px 20px;
+}
+
+select {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid var(--lightgrey);
+    border-radius: 6px;
+    width: 200px;
+    margin: 5px;
+}
+
+.radio-buttons {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 90%;
+    margin: 10px 20px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--lightgrey);
+    border-radius: 6px;
+    width: 200px;
+    margin: 5px;
+}
+
+.input1_box_flex {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    /* align-items: center; */
+    margin-left: 25px;
+}
+
+.i1bf {
+    width: 100%;
+    align-items: center;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    border: 1px solid var(--lightgrey);
+    border-radius: 6px;
+}
+
+.para_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: 25px;
+}
+
+p {
+    font-size: 12px;
+    color:rgb(85, 87, 87);
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.signup-button {
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 19px;
+    padding: 11px 11px;
+    border-color: var(--green);
+    /* display: inline-block; */
+    margin: 10px 0;
+    border-radius: 6px;
+    font-weight: bolder;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+}
+
+.signup-button:hover {
+    background-color: var(--dark-green);
+    color: var(--lightgrey);
+}
+
+.Already_an_account {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+footer {
+    height: 50%;
+    background-color: var(--white);
+    padding: 25px 35px;
+    /* margin-top: 160px; */
+}
+
+ul{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 0.8rem;
+    color: #7e7e7e;
+    /* line-height: 1rem; */
+}
+
+ul:hover {
+    cursor: pointer;
+}
+
+li {
+    margin-right: 15px;
+}
+
+.footer-link {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    background-color: var(--bg);
+    padding: 0px 11px;
+    /* outline: 1px solid #808080; */
+    border: 1px solid rgb(151, 149, 149);
+    border-radius: 3px;
+}
+
+.footer-line {
+    margin: 10 110px;
+}
+
+.my-footer1{
+    margin: 0 97px;
+    line-height: 1rem;
+}
+
+.my-footer2 {
+    color: #7e7e7e;
+    margin: 20px 100px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
