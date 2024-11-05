@@ -60,7 +60,7 @@ const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         }
         const isPasswordValid = yield bcrypt_1.default.compare(password, user.password);
         if (!isPasswordValid) {
-            res.status(400).json({ message: 'Invalid password' });
+            res.status(401).json({ message: 'Invalid password' });
             return;
         }
         const token = jsonwebtoken_1.default.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1h' });
